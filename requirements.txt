@@ -52,7 +52,6 @@ numpy==1.19.1
 packaging==20.4
 pandas==1.0.5
 pefile==2019.4.18
-pkg-resources==0.0.0
 pluggy==0.13.1
 protobuf==3.12.2
 psutil==5.7.2
