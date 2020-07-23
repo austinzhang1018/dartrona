@@ -1,1 +1,1 @@
-web: gunicorn dartrona:server
+web: gunicorn server
