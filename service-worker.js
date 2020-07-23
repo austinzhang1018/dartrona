@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/austinzhang1018/dartrona/precache-manifest.ab1d16544b0af55e8ec5362fa286b7eb.js"
+  "/austinzhang1018/dartrona/precache-manifest.d659d9c89250541b27be5e6ee16ca2ab.js"
 );
 
 self.addEventListener('message', (event) => {
