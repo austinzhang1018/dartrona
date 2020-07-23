@@ -5,4 +5,4 @@ from bot import get_prediction
 @app.route('/', methods['POST'])
 def question_answer():
     question = request.json['question']
-    return get_prediction 
+    return get_prediction(question, 5, 5)

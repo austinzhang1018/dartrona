@@ -1,0 +1,14 @@
+click==7.1.2
+construct==2.5.3
+Flask==1.1.2
+future==0.18.2
+gunicorn==20.0.4
+haystack==0.42
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+pefile==2019.4.18
+pkg-resources==0.0.0
+python-ptrace==0.9.5
+six==1.15.0
+Werkzeug==1.0.1

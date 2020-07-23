@@ -3,7 +3,6 @@
 
 
 from haystack import Finder
-from haystack.indexing.cleaning import clean_wiki_text
 from haystack.indexing.utils import convert_files_to_dicts, fetch_archive_from_http
 from haystack.reader.farm import FARMReader
 from haystack.reader.transformers import TransformersReader
@@ -12,9 +11,13 @@ import json
 
 # Connect to Elasticsearch
 
-from haystack.database.elasticsearch import ElasticsearchDocumentStore
-document_store = ElasticsearchDocumentStore(host="localhost", username="", password="", index="document")
+# from haystack.database.elasticsearch import ElasticsearchDocumentStore
 
+# don't use elasticsearch for now
+# document_store = ElasticsearchDocumentStore(host="localhost", username="", password="", index="document")
+
+from haystack.database.memory import InMemoryDocumentStore
+document_store = InMemoryDocumentStore()
 
 def build_dataset():
     with open('data.json') as f:
@@ -35,13 +38,15 @@ def write_storage():
     dicts = convert_files_to_dicts(dir_path=doc_dir, split_paragraphs=True)
     document_store.write_documents(dicts)
 
+write_storage()
 
-from haystack.retriever.sparse import ElasticsearchRetriever
-retriever = ElasticsearchRetriever(document_store=document_store)
+from haystack.retriever.sparse import TfidfRetriever# ElasticsearchRetriever
+# retriever = ElasticsearchRetriever(document_store=document_store)
+retriever = TfidfRetriever(document_store=document_store)
 
 reader = FARMReader(model_name_or_path="deepset/roberta-base-squad2", use_gpu=False)
 
 finder = Finder(reader, retriever)
 
 def get_prediction(question, num_retreive, num_read):
-    return finder.get_answers(question="Do I have to be on campus in fall?", top_k_retriever=10, top_k_reader=5)
+    return finder.get_answers(question=question, top_k_retriever=num_retreive, top_k_reader=num_read)
