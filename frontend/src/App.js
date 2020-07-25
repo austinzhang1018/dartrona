@@ -6,7 +6,8 @@ import axios from 'axios';
 function App() {
   const submitQuestion = async (data) => {
     console.log(data);
-    const response = await axios.post('https://dartrona.herokuapp.com/', {question})
+    const url = 'localhost:8000/api-qa' // 'https://dartrona.herokuapp.com/'
+    const response = await axios.post(url, {question})
   }
 
   const [question, setQuestion] = useState("");
