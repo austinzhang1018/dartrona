@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/austinzhang1018/dartrona/static/css/main.5f361e03.chunk.css",
-    "main.js": "/austinzhang1018/dartrona/static/js/main.bfb29e00.chunk.js",
-    "main.js.map": "/austinzhang1018/dartrona/static/js/main.bfb29e00.chunk.js.map",
-    "runtime-main.js": "/austinzhang1018/dartrona/static/js/runtime-main.0d23091d.js",
-    "runtime-main.js.map": "/austinzhang1018/dartrona/static/js/runtime-main.0d23091d.js.map",
-    "static/js/2.5a9edfb9.chunk.js": "/austinzhang1018/dartrona/static/js/2.5a9edfb9.chunk.js",
-    "static/js/2.5a9edfb9.chunk.js.map": "/austinzhang1018/dartrona/static/js/2.5a9edfb9.chunk.js.map",
-    "index.html": "/austinzhang1018/dartrona/index.html",
-    "precache-manifest.d659d9c89250541b27be5e6ee16ca2ab.js": "/austinzhang1018/dartrona/precache-manifest.d659d9c89250541b27be5e6ee16ca2ab.js",
-    "service-worker.js": "/austinzhang1018/dartrona/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/austinzhang1018/dartrona/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.5a9edfb9.chunk.js.LICENSE.txt": "/austinzhang1018/dartrona/static/js/2.5a9edfb9.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/austinzhang1018/dartrona/static/media/logo.5d5d9eef.svg"
+    "main.css": "/dartrona/static/css/main.5f361e03.chunk.css",
+    "main.js": "/dartrona/static/js/main.5eb9485f.chunk.js",
+    "main.js.map": "/dartrona/static/js/main.5eb9485f.chunk.js.map",
+    "runtime-main.js": "/dartrona/static/js/runtime-main.eaf3bbdc.js",
+    "runtime-main.js.map": "/dartrona/static/js/runtime-main.eaf3bbdc.js.map",
+    "static/js/2.5a9edfb9.chunk.js": "/dartrona/static/js/2.5a9edfb9.chunk.js",
+    "static/js/2.5a9edfb9.chunk.js.map": "/dartrona/static/js/2.5a9edfb9.chunk.js.map",
+    "index.html": "/dartrona/index.html",
+    "precache-manifest.5d0cf146f298085a9f33ccab998335b6.js": "/dartrona/precache-manifest.5d0cf146f298085a9f33ccab998335b6.js",
+    "service-worker.js": "/dartrona/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/dartrona/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.5a9edfb9.chunk.js.LICENSE.txt": "/dartrona/static/js/2.5a9edfb9.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/dartrona/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0d23091d.js",
+    "static/js/runtime-main.eaf3bbdc.js",
     "static/js/2.5a9edfb9.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.bfb29e00.chunk.js"
+    "static/js/main.5eb9485f.chunk.js"
   ]
 }
